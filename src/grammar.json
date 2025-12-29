@@ -13432,40 +13432,38 @@
         "value": "[a-zA-Z_\\p{L}][a-zA-Z0-9_\\p{L}]*"
       }
     },
-    "comment": {
+    "lineComment": {
       "type": "TOKEN",
       "content": {
-        "type": "CHOICE",
+        "type": "SEQ",
         "members": [
           {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "STRING",
-                "value": "//"
-              },
-              {
-                "type": "PATTERN",
-                "value": ".*"
-              }
-            ]
+            "type": "STRING",
+            "value": "//"
           },
           {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "STRING",
-                "value": "/*"
-              },
-              {
-                "type": "PATTERN",
-                "value": "[^*]*\\*+([^/*][^*]*\\*+)*"
-              },
-              {
-                "type": "STRING",
-                "value": "/"
-              }
-            ]
+            "type": "PATTERN",
+            "value": ".*"
+          }
+        ]
+      }
+    },
+    "blockComment": {
+      "type": "TOKEN",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "/*"
+          },
+          {
+            "type": "PATTERN",
+            "value": "[^*]*\\*+([^/*][^*]*\\*+)*"
+          },
+          {
+            "type": "STRING",
+            "value": "/"
           }
         ]
       }
@@ -13478,7 +13476,11 @@
     },
     {
       "type": "SYMBOL",
-      "name": "comment"
+      "name": "lineComment"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "blockComment"
     }
   ],
   "conflicts": [

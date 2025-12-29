@@ -11,7 +11,7 @@ import Vector::*;
 
 Integer kN = 1000;
 
-// BRAMRequest#(int, int) BRAMRequest makeRequest 
+// BRAMRequest#(int, int) BRAMRequest makeRequest
 // makeRequest(Bool write, int addr, int data);
 // function BRAMRequest#(int, int) makeRequest(Bool write, int addr, int data);
 function BRAMRequest#(int, int) makeRequest(Bool write, int addr, int data);
@@ -80,11 +80,11 @@ endinterface
 module mkDut(StartStop_ifc);
   // Dual port BRAM
   BRAM_Configure cfg = defaultValue;
-  cfg.memorySize = kN+1; 
+  cfg.memorySize = kN+1;
   BRAM2Port#(int, int) b_A <- mkBRAM2Server(cfg);
 
   // Registers
-  Reg#(int) r_n <- mkRegU; 
+  Reg#(int) r_n <- mkRegU;
   Reg#(Bool) r_start <- mkReg(False);
   Reg#(Bool) r_done <- mkReg(False);
 
@@ -104,7 +104,7 @@ module mkDut(StartStop_ifc);
     f_i.enq(r_i);
   endrule
 // ----------------------------------------------------------------------------
-  rule put_ld_req; 
+  rule put_ld_req;
     let i = f_i.first;
     f_i.deq;
 
@@ -112,12 +112,12 @@ module mkDut(StartStop_ifc);
     b_A.portA.request.put(req_ld);
   endrule
 // ----------------------------------------------------------------------------
-  rule get_ld_req; 
+  rule get_ld_req;
     let a <- b_A.portA.response.get;
     f_a.enq(a);
   endrule
 // ----------------------------------------------------------------------------
-  rule body1 (f_a.first > 0); 
+  rule body1 (f_a.first > 0);
     let a = f_a.first;
     let i = f_i2.first;
 
@@ -129,24 +129,24 @@ module mkDut(StartStop_ifc);
     f_i2.deq;
   endrule
 // ----------------------------------------------------------------------------
-  rule body2 (f_a.first <= 0);  
+  rule body2 (f_a.first <= 0);
     f_a.deq;
     f_i2.deq;
   endrule
 // ----------------------------------------------------------------------------
-  rule exit (r_start && r_i >= r_n);  
+  rule exit (r_start && r_i >= r_n);
     // r_done <= True;
     // r_start <= False;
   endrule
 // ----------------------------------------------------------------------------
 
   /// Interface
-  method Action put_args (int n) if (!r_start); 
+  method Action put_args (int n) if (!r_start);
     r_n <= n;
     r_start <= True;
   endmethod
   method Bool done;
-    return r_done; 
+    return r_done;
   endmethod
 
 endmodule
@@ -154,7 +154,7 @@ endmodule
 
 (* synthesize *)
 module mkTop();
-  Reg#(Bool) r_start <- mkReg(True); 
+  Reg#(Bool) r_start <- mkReg(True);
   Reg#(int) r_cycle <- mkReg (0);
 
   StartStop_ifc dut <- mkDut;
@@ -222,9 +222,9 @@ endpackage
                   (unsizedIntLiteral
                     (decNum
                       (decDigits)))))))))
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (functionDef
           (functionProto
@@ -395,8 +395,8 @@ endpackage
                 (identifier))
               (typeclassIde
                 (identifier))))))
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (typeDef
           (typedefSynonym
@@ -758,7 +758,7 @@ endpackage
                 (typePrimary
                   (typeIde
                     (identifier))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (varDecl
               (type
@@ -812,7 +812,7 @@ endpackage
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -863,7 +863,7 @@ endpackage
                   (expression
                     (exprPrimary
                       (boolLiteral)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1011,8 +1011,8 @@ endpackage
                         (unsizedIntLiteral
                           (decNum
                             (decDigits))))))))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1026,7 +1026,7 @@ endpackage
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1078,7 +1078,7 @@ endpackage
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1108,7 +1108,7 @@ endpackage
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1210,7 +1210,7 @@ endpackage
                   (exprPrimary
                     (identifier))
                   (identifier)))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1242,7 +1242,7 @@ endpackage
                   (exprPrimary
                     (identifier))
                   (identifier)))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -1264,10 +1264,10 @@ endpackage
                         (expression
                           (exprPrimary
                             (identifier))))))))
-              (comment)
-              (comment)))
-          (comment)
-          (comment)
+              (lineComment)
+              (lineComment)))
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (methodDef
               (identifier)

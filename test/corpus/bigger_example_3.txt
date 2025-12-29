@@ -379,18 +379,18 @@ endpackage: Mergesort
     (sourceFile
       (packageIde
         (identifier))
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (importDecl
         (importItem
           (packageIde
@@ -411,8 +411,8 @@ endpackage: Mergesort
         (importItem
           (packageIde
             (identifier))))
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
       (importDecl
         (importItem
           (packageIde
@@ -425,9 +425,9 @@ endpackage: Mergesort
         (importItem
           (packageIde
             (identifier))))
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (typeDef
           (typedefSynonym
@@ -438,7 +438,7 @@ endpackage: Mergesort
             (typeDefType
               (typeIde
                 (identifier))))))
-      (comment)
+      (lineComment)
       (packageStmt
         (typeDef
           (typedefSynonym
@@ -449,9 +449,9 @@ endpackage: Mergesort
             (typeDefType
               (typeIde
                 (identifier))))))
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (interfaceDecl
           (typeDefType
@@ -509,8 +509,8 @@ endpackage: Mergesort
                           (typeIde
                             (identifier))))))))
               (identifier)))))
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (moduleDef
           (attributeInstances
@@ -539,7 +539,7 @@ endpackage: Mergesort
                       (unsizedIntLiteral
                         (decNum
                           (decDigits)))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -554,9 +554,9 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -571,7 +571,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -586,8 +586,8 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (varDecl
               (type
@@ -609,7 +609,7 @@ endpackage: Mergesort
               (varInit
                 (lValue
                   (identifier)))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (varDecl
               (type
@@ -688,7 +688,7 @@ endpackage: Mergesort
                         (unsizedIntLiteral
                           (decNum
                             (decDigits))))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (lValue
@@ -781,7 +781,7 @@ endpackage: Mergesort
                               (unsizedIntLiteral
                                 (decNum
                                   (decDigits)))))))))))
-              (comment)
+              (lineComment)
               (actionStmt
                 (condPredicate
                   (exprOrCondPattern
@@ -904,7 +904,7 @@ endpackage: Mergesort
                                         (identifier))
                                       (identifier)))))))))))
                   (actionStmt
-                    (comment)
+                    (lineComment)
                     (actionStmt
                       (regWrite
                         (lValue
@@ -974,7 +974,7 @@ endpackage: Mergesort
                   (expression
                     (exprPrimary
                       (identifier)))))
-              (comment)
+              (lineComment)
               (actionStmt
                 (condPredicate
                   (exprOrCondPattern
@@ -1043,9 +1043,9 @@ endpackage: Mergesort
                       (expression
                         (exprPrimary
                           (stringLiteral)))))))))
-          (comment)
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1068,7 +1068,7 @@ endpackage: Mergesort
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1083,7 +1083,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1112,7 +1112,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1241,7 +1241,7 @@ endpackage: Mergesort
                                                     (expression
                                                       (exprPrimary
                                                         (identifier))))))))))))
-                                  (comment)
+                                  (lineComment)
                                   (fsmStmt
                                     (whileFsmStmt
                                       (expression
@@ -1302,7 +1302,7 @@ endpackage: Mergesort
                                                               (unsizedIntLiteral
                                                                 (decNum
                                                                   (decDigits))))))))))))
-                                            (comment)
+                                            (lineComment)
                                             (fsmStmt
                                               (actionStmt
                                                 (expression
@@ -1373,7 +1373,7 @@ endpackage: Mergesort
                                             (fsmStmt
                                               (actionStmt
                                                 (actionBlock
-                                                  (comment)
+                                                  (lineComment)
                                                   (actionStmt
                                                     (regWrite
                                                       (lValue
@@ -1407,7 +1407,7 @@ endpackage: Mergesort
                                                                   (unsizedIntLiteral
                                                                     (decNum
                                                                       (decDigits)))))))))))))))))))
-                                  (comment)
+                                  (lineComment)
                                   (fsmStmt
                                     (ifFsmStmt
                                       (expression
@@ -1511,7 +1511,7 @@ endpackage: Mergesort
                                                 (expression
                                                   (exprPrimary
                                                     (identifier))))))))))
-                                  (comment)
+                                  (lineComment)
                                   (fsmStmt
                                     (actionStmt
                                       (actionBlock
@@ -1604,7 +1604,7 @@ endpackage: Mergesort
                                                     (unsizedIntLiteral
                                                       (decNum
                                                         (decDigits))))))))))))))))))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (type
               (typePrimary
@@ -1742,8 +1742,8 @@ endpackage: Mergesort
                       (expression
                         (exprPrimary
                           (identifier)))))))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (functionDef
               (functionProto
@@ -1906,12 +1906,12 @@ endpackage: Mergesort
                         (exprPrimary
                           (identifier)))))))))
           (identifier)))
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (interfaceDecl
           (typeDefType
@@ -1994,13 +1994,13 @@ endpackage: Mergesort
                       (typeIde
                         (identifier))))))
               (identifier)))))
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (varDecl
           (type
@@ -2216,7 +2216,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -2249,7 +2249,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -2264,7 +2264,7 @@ endpackage: Mergesort
                 (identifier))
               (moduleApp
                 (identifier))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -2382,9 +2382,9 @@ endpackage: Mergesort
                       (exprPrimary
                         (identifier))
                       (identifier)))))))
-          (comment)
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -2591,7 +2591,7 @@ endpackage: Mergesort
                                 (unsizedIntLiteral
                                   (decNum
                                     (decDigits))))))))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -2727,7 +2727,7 @@ endpackage: Mergesort
                         (exprPrimary
                           (identifier))
                         (identifier))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -2934,7 +2934,7 @@ endpackage: Mergesort
                                 (unsizedIntLiteral
                                   (decNum
                                     (decDigits))))))))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -3070,7 +3070,7 @@ endpackage: Mergesort
                         (exprPrimary
                           (identifier))
                         (identifier))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)
@@ -3454,8 +3454,8 @@ endpackage: Mergesort
                     (expression
                       (exprPrimary
                         (boolLiteral))))))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (methodDef
               (identifier)
@@ -3830,6 +3830,6 @@ endpackage: Mergesort
                         (exprPrimary
                           (identifier)))))))))
           (identifier)))
-      (comment)
+      (lineComment)
       (packageIde
         (identifier)))

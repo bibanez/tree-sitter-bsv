@@ -105,25 +105,24 @@ typedef struct {
        (typePrimary
         (typeIde
          (identifier))))
-      (comment)
+      (lineComment)
       (typeFormal
        (typePrimary
         (typeIde
          (identifier))))
-      (comment)
+      (lineComment)
       (typeFormal
        (typePrimary
         (typeIde
          (identifier))))
-      (comment)
+      (lineComment)
       (typeFormal
        (typePrimary
         (typeIde
          (identifier))))))
-(comment)
+(lineComment)
   (derives
    (typeclassIde
     (identifier))
    (typeclassIde
     (identifier)))))))
-

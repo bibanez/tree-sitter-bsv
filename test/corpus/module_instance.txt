@@ -54,7 +54,7 @@ endmodule
                         (unsizedIntLiteral
                           (decNum
                             (decDigits))))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (lValue

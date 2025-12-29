@@ -98,7 +98,7 @@ endmodule
               (varInit
                 (lValue
                   (identifier)))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (lValue
@@ -208,7 +208,7 @@ endmodule
               (varInit
                 (lValue
                   (identifier)))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (lValue

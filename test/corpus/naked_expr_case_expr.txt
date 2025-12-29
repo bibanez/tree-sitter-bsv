@@ -7,7 +7,7 @@ typedef enum {Foo, Bar, Foobar} FooNum deriving(Bits, Eq);
 module mkCase(Empty);
   Reg#(int) r <- mkReg(0);
   Reg#(FooNum) r_foo <- mkReg(Foo);
-  // Reg#(FooNum) r_foo <- case (8) matches 
+  // Reg#(FooNum) r_foo <- case (8) matches
   //                         2: return mkReg(Foo);
   //                         3: mkReg(Bar);
   //                       endcase;
@@ -88,10 +88,10 @@ endmodule
                   (expression
                     (exprPrimary
                       (identifier)))))))
-          (comment)
-          (comment)
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (rule
               (identifier)

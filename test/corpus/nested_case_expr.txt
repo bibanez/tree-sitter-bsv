@@ -269,7 +269,7 @@ endfunction: foo
                     (expression
                       (exprPrimary
                         (boolLiteral)))))))
-            (comment)
+            (lineComment)
             (functionBodyStmt
               (expression
                 (exprPrimary

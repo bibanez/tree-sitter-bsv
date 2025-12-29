@@ -5241,6 +5241,11 @@
     "named": false
   },
   {
+    "type": "blockComment",
+    "named": true,
+    "extra": true
+  },
+  {
     "type": "break",
     "named": false
   },
@@ -5251,11 +5256,6 @@
   {
     "type": "clocked_by",
     "named": false
-  },
-  {
-    "type": "comment",
-    "named": true,
-    "extra": true
   },
   {
     "type": "continue",
@@ -5424,6 +5424,11 @@
   {
     "type": "let",
     "named": false
+  },
+  {
+    "type": "lineComment",
+    "named": true,
+    "extra": true
   },
   {
     "type": "match",

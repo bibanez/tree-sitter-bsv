@@ -1,0 +1,36 @@
+====================
+comment
+====================
+/**** this file tests a multi-line comment
+
+this is junk
+**/
+package Comment;
+Bool x = True;
+// Another comment
+/* a single-line comment */
+/* another multi-line comment
+
+*/
+endpackage
+
+---
+(sourceFile
+  (blockComment)
+  (packageIde
+    (identifier))
+  (packageStmt
+    (varDecl
+      (type
+        (typePrimary
+          (typeIde
+            (identifier))))
+      (varInit
+        (lValue
+          (identifier))
+        (expression
+          (exprPrimary
+            (boolLiteral))))))
+  (lineComment)
+  (blockComment)
+  (blockComment))

@@ -44,7 +44,7 @@ module mkCPU_Model();
                         Req_I req = Req {command:READ, addr:accel_base_addr, data:?, b_size:BITS64, tid:?};
                         f_reqs.enq (req);
                       endaction
-                      
+
                       action
                         let rsp = f_rsps.first; f_rsps.deq;
                         Bool busy = (rsp.data != 0);
@@ -86,7 +86,7 @@ endmodule
                                 (fsmStmt
                                   (actionStmt
                                     (actionBlock
-                                      (comment)
+                                      (lineComment)
                                       (actionStmt
                                         (varDecl
                                           (type
@@ -149,7 +149,7 @@ endmodule
                                 (fsmStmt
                                   (actionStmt
                                     (actionBlock
-                                      (comment)
+                                      (lineComment)
                                       (actionStmt
                                         (varDecl
                                           (type
@@ -212,7 +212,7 @@ endmodule
                                 (fsmStmt
                                   (actionStmt
                                     (actionBlock
-                                      (comment)
+                                      (lineComment)
                                       (actionStmt
                                         (varDecl
                                           (type
@@ -275,7 +275,7 @@ endmodule
                                 (fsmStmt
                                   (actionStmt
                                     (actionBlock
-                                      (comment)
+                                      (lineComment)
                                       (actionStmt
                                         (varDecl
                                           (type
@@ -337,7 +337,7 @@ endmodule
                                               (identifier))))))))))
                             (fsmStmt
                               (seqFsmStmt
-                                (comment)
+                                (lineComment)
                                 (fsmStmt
                                   (actionStmt
                                     (methodCall
@@ -362,7 +362,7 @@ endmodule
                                       (exprPrimary
                                         (identifier))
                                       (identifier))))))))
-                        (comment)
+                        (lineComment)
                         (fsmStmt
                           (actionStmt
                             (regWrite

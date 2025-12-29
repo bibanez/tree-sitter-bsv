@@ -176,14 +176,14 @@ endpackage
 ---
 
     (sourceFile
-      (comment)
+      (lineComment)
       (packageIde
         (identifier))
-      (comment)
-      (comment)
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (importDecl
         (importItem
           (packageIde
@@ -200,9 +200,9 @@ endpackage
         (importItem
           (packageIde
             (identifier))))
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (typeDef
           (typedefStruct
@@ -288,31 +288,31 @@ endpackage
                   (typePrimary
                     (typeIde
                       (identifier))))
-                (comment)
+                (lineComment)
                 (typeFormal
                   (typePrimary
                     (typeIde
                       (identifier))))
-                (comment)
+                (lineComment)
                 (typeFormal
                   (typePrimary
                     (typeIde
                       (identifier))))
-                (comment)
+                (lineComment)
                 (typeFormal
                   (typePrimary
                     (typeIde
                       (identifier))))))
-            (comment)
+            (lineComment)
             (derives
               (typeclassIde
                 (identifier))
               (typeclassIde
                 (identifier))))))
-      (comment)
-      (comment)
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (interfaceDecl
           (typeDefType
@@ -900,8 +900,8 @@ endpackage
                           (exprPrimary
                             (identifier))
                           (identifier)))))))))))
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (interfaceDecl
           (typeDefType
@@ -1006,7 +1006,7 @@ endpackage
                     (typePrimary
                       (typeIde
                         (identifier))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1045,8 +1045,8 @@ endpackage
                   (expression
                     (exprPrimary
                       (boolLiteral)))))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (subinterfaceDef
               (identifier)
@@ -1055,7 +1055,7 @@ endpackage
                   (exprPrimary
                     (interfaceExpr
                       (identifier)
-                      (comment)
+                      (lineComment)
                       (interfaceStmt
                         (methodDef
                           (identifier)
@@ -1086,7 +1086,7 @@ endpackage
                                 (exprPrimary
                                   (identifier))
                                 (identifier))))))
-                      (comment)
+                      (lineComment)
                       (interfaceStmt
                         (methodDef
                           (type
@@ -1264,8 +1264,8 @@ endpackage
                       (expression
                         (exprPrimary
                           (identifier)))))))))))
-      (comment)
-      (comment)
+      (lineComment)
+      (lineComment)
       (packageStmt
         (interfaceDecl
           (typeDefType
@@ -1370,7 +1370,7 @@ endpackage
                     (typePrimary
                       (typeIde
                         (identifier))))))))
-          (comment)
+          (lineComment)
           (moduleStmt
             (moduleInst
               (type
@@ -1409,8 +1409,8 @@ endpackage
                   (expression
                     (exprPrimary
                       (boolLiteral)))))))
-          (comment)
-          (comment)
+          (lineComment)
+          (lineComment)
           (moduleStmt
             (subinterfaceDef
               (identifier)
@@ -1419,7 +1419,7 @@ endpackage
                   (exprPrimary
                     (interfaceExpr
                       (identifier)
-                      (comment)
+                      (lineComment)
                       (interfaceStmt
                         (methodDef
                           (type
@@ -1434,7 +1434,7 @@ endpackage
                                   (exprPrimary
                                     (identifier))
                                   (identifier)))))))
-                      (comment)
+                      (lineComment)
                       (interfaceStmt
                         (methodDef
                           (identifier)
@@ -1599,4 +1599,4 @@ endpackage
                       (expression
                         (exprPrimary
                           (identifier)))))))))))
-      (comment))
+      (lineComment))
